@@ -98,6 +98,8 @@ public class Calculadora {
 
     private double dividir() {
         return num1 / num2;
+        // (Lorenzo Devia rubio)
+        //Este metodo retorna la division de los atributos de num1 entre num2
     }
 
     public void ingresarLosNumeros() {
@@ -114,7 +116,7 @@ public class Calculadora {
         //(Lucas Palminio)
         //Este metodo retorna un numero de tipo Double ingresado por teclado,
         //Primero muestra un pantalla al usuario que numero debe ingresar y luego
-        //esta entrada es validad para que se ingrese solamente un valor numerico.
+        //esta entrada es validada para que se ingrese solamente un valor numerico.
 
 
         while (true) {
