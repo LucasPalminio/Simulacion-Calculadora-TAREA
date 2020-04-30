@@ -26,7 +26,7 @@ public class Calculadora {
 
 
         }
-        int opcion = teclado.nextInt();
+        int opcion = ingresarUnNumero("Ingrese una opcion");
         switch (opcion) {
             case 1: //sumar
                 resultado = suma();
