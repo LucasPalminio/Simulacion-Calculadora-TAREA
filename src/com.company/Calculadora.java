@@ -13,7 +13,6 @@ public class Calculadora {
         System.out.println("==============|Calculadora|==============");
         System.out.println("=========================================");
 
-
         String[] simbolos = {"+", "-", "*", "/", " elevado a ", "¿Cual de los dos numeros es mayor? ", "Modificar Los Numeros", "Salir"};
         System.out.println(">>>>>>Seleccione la opcion deseada<<<<<<");
         for (int i = 0; i < simbolos.length; i++) {
@@ -44,6 +43,7 @@ public class Calculadora {
                 // Para evitar altercados con la division por 0, se restringe su uso y se devuelve al menu
                 if (num2 != 0) {
                     resultado = dividir();
+                    System.out.println(num1 + "/" + num2 + "=" + resultado+"(El resultado esta en enteros)");
                 } else {
                     System.out.println("Error, el divisor es 0");
                 }
