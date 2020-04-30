@@ -39,11 +39,23 @@ public class Calculadora {
             case 7:
                 ingresarLosNumeros();
                 break;
+            case 4:
+                // (Lorenzo Devia Rubio)
+                // Para evitar altercados con la division por 0, se restringe su uso y se devuelve al menu
+                if (num2 != 0) {
+                    resultado = dividir();
+                } else {
+                    System.out.println("Error, el divisor es 0");
+                }
+                break;
+            case 6:
+                System.out.println(comparar());
+                break;
             case 8:
                 System.out.println("Hasta la proxima!");
                 return;
             default:
-                System.out.println("Error, la opcion ingresada es incorrecta, intentelo Nuevamete");
+                System.out.println("Error, la opcion ingresada es incorrecta, intentelo Nuevamente");
                 menu();
 
         }
@@ -57,6 +69,26 @@ public class Calculadora {
 
     private int restar() {
         return num1 - num2;
+    }
+
+    private String comparar() {
+        // (Lorenzo Devia rubio)
+        // Primero verifica si ambos numeros son iguales, si es verdadero retorna el mensaje correspondiente en String,
+        // si es falso verifica si el primer numero es mayor que el segundo, si es verdadero retorna el mensaje correspondiente en String,
+        // finalmente si es falso se asume que el segundo numero es mayor que el primero y se retorna el mensaje correspondiente en String
+        if (num1 == num2) {
+            return "Ambos numeros son iguales";
+        } else {
+            if (num1 > num2) {
+                return num1 + " es mayor que " + num2;
+            } else {
+                return num2 + " es mayor que " + num1;
+            }
+        }
+    }
+
+    private int dividir() {
+        return num1 / num2;
     }
 
     public void ingresarLosNumeros() {
