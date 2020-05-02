@@ -36,7 +36,11 @@ public class Calculadora {
                 resultado = restar();
                 System.out.println(num1 + "-" + num2 + "=" + resultado);
                 break;
-            case 3: //Multiplicacion
+            case 3: /*Multiplicacion
+                    (Fernando Robles)
+                    */
+                resultado = multiplicacion();
+                System.out.println(num1 + "*" + num2 + "=" + resultado);
                 break;
             case 4: //Division
                 // (Lorenzo Devia Rubio)
@@ -48,7 +52,12 @@ public class Calculadora {
                     System.out.println("Error, el divisor es 0");
                 }
                 break;
-            case 5: // Potencia
+            case 5: /* Potencia
+                    (Fernando Robles)
+                    Utilice el metodo de  "Math.pow" haciendo que la variable "num1" sea la base y "num2" el exponente.
+                    */
+                resultado= potencia();
+                System.out.println(num1 + "^" + num2 + "=" + resultado);
                 break;
             case 6: //Comparacion
                 System.out.println(comparar());
@@ -100,6 +109,18 @@ public class Calculadora {
         return num1 / num2;
         // (Lorenzo Devia rubio)
         //Este metodo retorna la division de los atributos de num1 entre num2
+    }
+
+    private double multiplicacion(){
+        /*Fernando Robles*/
+        return num1 * num2;
+
+    }
+
+    private double potencia(){
+
+        double elevado= Math.pow(num1, num2);
+        return elevado;
     }
 
     public void ingresarLosNumeros() {
