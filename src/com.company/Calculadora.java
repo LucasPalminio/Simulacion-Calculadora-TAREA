@@ -8,16 +8,22 @@ public class Calculadora {
     private double num2;
     private double resultado;
     public Calculadora(){
+        //(Lucas Palminio)
+        //Este constructor sirve si se instancia un objeto de clase Calculadora sin parametros
+        //esta llama al metodo a que ingrese los numeros por terminal.
         ingresarLosNumeros();
     }
 
     public Calculadora(double num1, double num2) {
+        //(Lucas Palminio)
+        //Este constructo contiene dos parametros que estas se usan para inicializar num1 y num2.
         this.num1 = num1;
         this.num2 = num2;
     }
 
 
     public void menu() {
+        /*Menu: diseño por Lorenzo Devia y algoritmo por Lucas Palminio*/
         System.out.println("=========================================");
         System.out.println("==============|Calculadora|==============");
         System.out.println("=========================================");
@@ -91,6 +97,7 @@ public class Calculadora {
 
     }
 
+    /*A continuacion una lista de setters y getters si llega a ser necesario (Lucas Palminio)*/
     public double getNum1() {
         return num1;
     }
