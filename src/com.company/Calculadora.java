@@ -65,12 +65,13 @@ public class Calculadora {
                     (Fernando Robles)
                     Utilice el metodo de  "Math.pow" haciendo que la variable "num1" sea la base y "num2" el exponente.
                     */
-                if(num1 == 0 && num2 == 0){
-                    System.out.println("Error: 0^0 NO EXISTE, porfavor intente ingresar otro numero");
-                }else {
-                    resultado = potencia();
+                if(num1==0 && num2==0) {
+                    System.out.println("Se indefine,ya que la base y el exponente son 0");
+                }else{
+                    resultado=potencia();
                     System.out.println(num1 + "^" + num2 + "=" + resultado);
                 }
+
                 break;
             case 6: //Comparacion
                 System.out.println(comparar());
@@ -152,8 +153,9 @@ public class Calculadora {
 
     public double potencia(){
 
-        double elevado= Math.pow(num1, num2);
+        double elevado = Math.pow(num1, num2);
         return elevado;
+
     }
 
     public void ingresarLosNumeros() {
