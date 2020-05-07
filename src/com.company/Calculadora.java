@@ -9,8 +9,10 @@ public class Calculadora {
     private double resultado;
     public Calculadora(){
         //(Lucas Palminio)
-        //Este constructor sirve si se instancia un objeto de clase Calculadora sin parametros
-        //esta llama al metodo a que ingrese los numeros por terminal.
+        /*
+        * Cuando se instancia un objeto de la clase calculadora con este constructor
+        * este llama al método ingresarLosNumeros() para que el usuario ingrese los valores para num1 y num2 por terminal
+        * */
         ingresarLosNumeros();
     }
 
@@ -23,7 +25,13 @@ public class Calculadora {
 
 
     public void menu() {
-        /*Menu: diseño por Lorenzo Devia y algoritmo por Lucas Palminio*/
+        /*Menu: diseño por Lorenzo Devia y algoritmo por Lucas Palminio
+        * Muestra en pantalla el mensaje de bienvenida y el menú de opciones disponibles para num1 y num2
+        * de la calculadora que son 8: Sumar, resta, Multiplicación, División, Potencia, Comparación, cambiar los valores de num1 y num2, y salir,
+        * una vez elegida una opción (excepto salir) se realiza la operación, se muestra en pantalla la operación y el resultado, y vuelve a mostrar en pantalla el menú.
+        *  Cuando se elige la opción Salir, muestra en pantalla un mensaje de despedida y termina la ejecución del programa.
+        *
+        * */
         System.out.println("=========================================");
         System.out.println("==============|Calculadora|==============");
         System.out.println("=========================================");
@@ -184,7 +192,7 @@ public class Calculadora {
     public double ingresarUnNumero(String mensaje) {
         //(Lucas Palminio)
         //Este metodo retorna un numero de tipo Double ingresado por teclado,
-        //Primero muestra un mensaje en pantalla al usuario que numero debe ingresar y luego
+        //Primero muestra un mensaje (ingresado por parametro) en pantalla al usuario que numero debe ingresar y luego
         //esta entrada es validada para que se ingrese solamente un valor numerico.
         //En caso de que ocurra una excepcion el sistema preguntara nuevamente
 
