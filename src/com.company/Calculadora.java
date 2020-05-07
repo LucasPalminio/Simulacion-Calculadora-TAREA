@@ -69,8 +69,7 @@ public class Calculadora {
                 break;
             case 5: /* Potencia
                     (Fernando Robles)
-                    Utilice el metodo de  "Math.pow" haciendo que la variable "num1" sea la base y "num2" el exponente.
-                    */
+                    evita que al ingresar como base y exponente el número “0” entregue como resultado el “1”                    */
                 if(num1==0 && num2==0) {
                     System.out.println("Se indefine,ya que la base y el exponente son 0");
                 }else{
@@ -153,15 +152,22 @@ public class Calculadora {
     }
 
     public double multiplicacion(){
-        /*Fernando Robles*/
+        /*Fernando Robles
+         Este método toma las variables “num1” y “num2” como los  factores  de la multiplicación
+         y asigna el resultado(producto) a la variable “resultado” .
+
+        */
         return num1 * num2;
 
     }
 
     public double potencia(){
+        /*Fernando Robles
+        Utiliza el método de  "Math.pow" haciendo que la variable "num1" sea la base y "num2" el exponente.
 
-        double elevado = Math.pow(num1, num2);
-        return elevado;
+         */
+
+        return Math.pow(num1, num2);
 
     }
 
