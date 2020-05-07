@@ -135,7 +135,7 @@ public class Calculadora {
         // si es falso verifica si el primer numero es mayor que el segundo, si es verdadero retorna el mensaje correspondiente en String,
         // finalmente si es falso se asume que el segundo numero es mayor que el primero y se retorna el mensaje correspondiente en String
         if (num1 == num2) {
-            return "Ambos numeros son iguales";
+            return "Ambos numeros son iguales, compartiendo el valor "+num1;
         } else {
             if (num1 > num2) {
                 return num1 + " es mayor que " + num2;
